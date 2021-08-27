@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MockUpResponseGenerator</members>
+        <members>PC_AsyncCallout</members>
+        <members>PC_AttachmentInspectService</members>
+        <members>PC_Callouts</members>
+        <members>PC_CalloutsTest</members>
+        <members>PC_ContentDocumentLinkHandler</members>
+        <members>PC_ResponseWrapper</members>
+        <members>TestDataFactory</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ContentDocumentLinkTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Profanity_Check_Setting__mdt.end_point__c</members>
+        <members>Profanity_Check_Setting__mdt.token__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Profanity_Check_Setting.Dev</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Profanity_Check_Setting__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>ProfanityCheck</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>45.0</version>
+</Package>
