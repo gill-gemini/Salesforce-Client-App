@@ -6,6 +6,6 @@ The application detects a file(content version) under a case Sobject and create 
 profanity check rest api with content version data. Based on the response from the API , the attachment is deleted , if it contains obcsene 
 words.Currently the client app cannot handle the file > 12 MB. 
 
-The profanity check api rest endpoint is set in the custom metadata type. Remote site settings should have the rest API URL.
+The profanity check api rest endpoint is set in the custom metadata type(Profanity_Check_Setting__mdt). Remote site settings should have the rest API URL.
 
 Package.xml contains all the metadata , which needs to be deployed to sandbox.
