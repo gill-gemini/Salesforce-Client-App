@@ -17,6 +17,7 @@ The profanity check api rest endpoint is set in the custom metadata type(Profani
 The client app can only handle one file in a transaction. If bulk of files are loaded , then only for the first file , the profanity check is done.
 
 * **Deployment**
+
 Clone the repo and use Package.xml which contains all the metadata for deployment to the SF sandbox.
 
 * **SAMPLE TEST**
