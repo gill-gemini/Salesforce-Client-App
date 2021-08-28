@@ -28,6 +28,10 @@ Clone the repo and use Package.xml which contains all the metadata for deploymen
   After deployment , Upload a file (content version) on a case. If the txt file contains an obscene word , then it will be deleted.
   
   <img width="781" alt="Screenshot 2021-08-28 at 4 17 41" src="https://user-images.githubusercontent.com/1822240/131201810-a0bc7d40-2c7c-43d4-b09e-cee5eb8e8b94.png">
-
+  
+  
+  * **NOTES && ENHANCMENTS**
+    An exception log needs to be implemented , so that the async errors can be logged.
+    Support for files >12MB will be implemented.
 
 [1] https://github.com/gill-gemini/profanitycheckapi/tree/master
