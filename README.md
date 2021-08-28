@@ -9,12 +9,7 @@ words.Currently the client app cannot handle the file > 12 MB.
 The client app makes a post call to the following URL , with the content version data in the body.
 https://scancontent.herokuapp.com
 
-The rest API is running on free dynos on Heroku account. So when you make the first request , server is sleeping ,it will time out. Sencond request will be successful.
-
-
-The profanity check api rest endpoint is set in the custom metadata type(Profanity_Check_Setting__mdt). Remote site settings should have the rest API URL.
-
-The client app can only handle one file in a transaction. If bulk of files are loaded , then only for the first file , the profanity check is done.
+The rest API is running on free dynos on Heroku account. So when you make the first request , server is sleeping ,it will time out. Sencond request will be successful.The profanity check api rest endpoint is set in the custom metadata type(Profanity_Check_Setting__mdt). Remote site settings should have the rest API URL.The client app can only handle one file in a transaction. If bulk of files are loaded , then only for the first file , the profanity check is done.
 
 * **Deployment**
 
