@@ -13,7 +13,7 @@ The rest API is running on free dynos on Heroku account. So when you make the fi
 
 * **Type of Files Supported**
 
-  Only txt files are supported.
+  Only txt files are supported. .txt , .csv and .xml extensions are supported.
 
 * **Banned Words Document**
 
