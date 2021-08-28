@@ -9,6 +9,9 @@ words.Currently the client app cannot handle the file > 12 MB.
 The client app makes a post call to the following URL , with the content version data in the body.
 https://scancontent.herokuapp.com
 
+The rest API is running with free dynos on Heroku account. So when you make the first request , it will time out. Sencond request will be successful.
+
+
 The profanity check api rest endpoint is set in the custom metadata type(Profanity_Check_Setting__mdt). Remote site settings should have the rest API URL.
 
 Package.xml contains all the metadata , which needs to be deployed to sandbox.
