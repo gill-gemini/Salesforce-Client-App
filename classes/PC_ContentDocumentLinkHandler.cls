@@ -11,32 +11,25 @@ public with sharing class PC_ContentDocumentLinkHandler {
         List <Case> cases = new List <Case>();
         List <ContentVersion> conVerList = new List <ContentVersion>();
         Map<Id , Id> contentMap = new Map<Id , Id>();
+        
         for (ContentDocumentLink link : conDocLinkList) {
             linkEntityIdList.add(link.linkedEntityId);
             contentDocumentIdList.add(link.ContentDocumentId);
             contentMap.put(link.linkedEntityId ,link.ContentDocumentId);
         }
 
-        if (!linkEntityIdList.isEmpty()) {
-            cases = [
-                    SELECT Id
-                    FROM Case
-                    WHERE id = :linkEntityIdList
-                    LIMIT 1000
-            ];
+        for(Case c :[SELECT Id FROM Case WHERE id = :linkEntityIdList LIMIT 1000]) {
+            caseContentDocList.add(contentMap.get(c.Id));
         }
-
         Map<String , ContentVersion> contentVersionMap = new Map<String ,ContentVersion>();
-
-
         if (!contentDocumentIdList.isEmpty()) {
             conVerList = [
                     SELECT Id, VersionData,ContentDocumentId
                     FROM ContentVersion
                     WHERE ContentDocumentId = :caseContentDocList
                     LIMIT 1000];
-            
         }
+
         if(!System.isQueueable() && !conVerList.isEmpty()) {
             PC_AsyncCallout makeCallout = new PC_AsyncCallout(conVerList[0]);
             ID jobID = System.enqueueJob(makeCallout);
