@@ -11,7 +11,7 @@ https://scancontent.herokuapp.com
 
 The rest API is running on free dynos on Heroku account. So when you make the first request , server is sleeping ,it will time out. Sencond request will be successful.The profanity check api rest endpoint is set in the custom metadata type(Profanity_Check_Setting__mdt). Remote site settings should have the rest API URL.The client app can only handle one file in a transaction. If bulk of files are loaded , then only for the first file , the profanity check is done.
 
-* **Banned Words Doc **
+* **Banned Words Doc**
 
 The list of banned words is fetched from the google link mentioned below. Use a word from this doc to create a file , which should be deleted.
 https://docs.google.com/spreadsheets/d/1hIEi2YG3ydav1E06Bzf2mQbGZ12kh2fe4ISgLg_UBuM/export?format=csv
