@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>end_point__c</field>
-        <value xsi:type="xsd:string">http://scancontent.herokuapp.com</value>
+        <value xsi:type="xsd:string">https://scancontent.herokuapp.com</value>
     </values>
     <values>
         <field>token__c</field>
