@@ -20,7 +20,7 @@ Package.xml contains all the metadata , which needs to be deployed to sandbox.
 
 * **SAMPLE TEST**
 
-  After deployment , Upload a file (content version) on a case. If the txt file contains an obcscene word , then it will be deleted.
+  After deployment , Upload a file (content version) on a case. If the txt file contains an obscene word , then it will be deleted.
   
   <img width="781" alt="Screenshot 2021-08-28 at 4 17 41" src="https://user-images.githubusercontent.com/1822240/131201810-a0bc7d40-2c7c-43d4-b09e-cee5eb8e8b94.png">
 
