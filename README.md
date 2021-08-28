@@ -14,6 +14,8 @@ The rest API is running on free dynos on Heroku account. So when you make the fi
 
 The profanity check api rest endpoint is set in the custom metadata type(Profanity_Check_Setting__mdt). Remote site settings should have the rest API URL.
 
+The client app can only handle one file in a transaction. If bulk of files are loaded , then only for the first file , the profanity check is done.
+
 Package.xml contains all the metadata , which needs to be deployed to sandbox.
 
 [1] https://github.com/gill-gemini/profanitycheckapi/tree/master
