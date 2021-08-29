@@ -26,7 +26,7 @@ public with sharing class PC_Callouts {
         List<Profanity_Check_Setting__mdt> pcEndPointInfo = getpcMdt();
 
         HttpRequest request = new HttpRequest();
-        request.setEndpoint( pcEndPointInfo[0].end_point__c + '/scancontent');
+        request.setEndpoint( pcEndPointInfo[0].end_point__c + '/v1/scancontent');
         request.setMethod('POST');
         request.setHeader('Content-Type', 'application/json;charset=UTF-8');
         request.setTimeout(12000);
