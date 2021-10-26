@@ -16,7 +16,7 @@ public with sharing class PC_CalloutsTest {
                 + '}';
         List<Case> cases= TestDataFactory.createCases(1);
         insert cases;
-        ContentVersion co = TestDataFactory.createContentVersion('Hey whats Up fuck fuck fuck');
+        ContentVersion co = TestDataFactory.createContentVersion('Hey whats Up dombo dombo dombo');
         insert co;
         List<ContentDocument> documents = [SELECT Id, Title, LatestPublishedVersionId FROM ContentDocument];
 
